@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #282828;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+nav {
+    background-color: #444444;
+}
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-link {
+    padding: 15px 30px;
+    cursor: pointer;
+    background: #333;
+    border: 1px solid #444;
+    margin: 5px;
+    border-radius: 20px;  /* Bord arrondi pour les onglets */
+    transition: background 0.3s, transform 0.2s;
+}
+
+.tab-link:hover,
+.tab-link.active {
+    background: #555;
+    transform: scale(1.05);  /* Légère mise en avant au survol */
+}
+
+.tab-content {
+    display: none;
+    margin: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;  /* Bord arrondi pour les logos */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #ffffff;  /* Ajout d'un effet lumineux */
+}
+
+a img + span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#game-container {
+    margin: 20px;
+    text-align: center;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #444;
+    border-radius: 10px;  /* Bord arrondi pour l'input */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;  /* Bord arrondi pour les boutons */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.1);  /* Mise en avant au survol */
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #282828;
+}

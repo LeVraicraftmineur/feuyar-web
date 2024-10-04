@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feuyar - Site Officiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Feuyar</h1>
+        <p>Bienvenue sur le site officiel de Feuyar ! Retrouvez tous ses réseaux sociaux ici.</p>
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li class="tab-link active" data-tab="socials">Réseaux Sociaux</li>
+            <li class="tab-link" data-tab="videos">Vidéos YouTube</li>
+            <li class="tab-link" data-tab="game">Jeu</li>
+        </ul>
+    </nav>
+
+    <div id="socials" class="tab-content active">
+        <h2>Réseaux Sociaux</h2>
+        <div class="social-links">
+            <a href="https://www.twitch.tv/feuyard" target="_blank">
+                <img src="twitch-logo.png" alt="Twitch" class="social-icon">
+                Twitch
+            </a>
+            <a href="https://www.tiktok.com/@feuyar" target="_blank">
+                <img src="tiktok-logo.png" alt="TikTok" class="social-icon">
+                TikTok
+            </a>
+            <a href="https://www.youtube.com/@feuyar.shorts/videos" target="_blank">
+                <img src="logo.png" alt="YouTube" class="social-icon">
+                YouTube
+            </a>
+        </div>
+    </div>
+
+    <div id="videos" class="tab-content">
+        <h2>Dernières Vidéos YouTube</h2>
+        <div id="youtube-posts">
+            <p>Chargement des dernières vidéos...</p>
+        </div>
+    </div>
+
+    <div id="game" class="tab-content">
+        <h2>Jeu Interactif</h2>
+        <div id="game-container">
+            <p>Devine un nombre entre 1 et 100 :</p>
+            <input type="number" id="guess-input" min="1" max="100">
+            <button onclick="playGame()">Jouer</button>
+            <p id="game-result"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Feuyar - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
